@@ -38,7 +38,6 @@ function App() {
     setData([...updatedData, newRow]);
   }, [data]);
 
-  console.log(data);
   return (
     <main>
       <table>
