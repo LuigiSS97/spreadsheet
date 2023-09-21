@@ -11,15 +11,6 @@ function App() {
     [4, "", "", "", ""],
     [5, "", "", "", ""],
   ]);
-  console.log(data);
-  const handleCellChange = useCallback(
-    (rowIndex, colIndex, value) => {
-      const updatedData = [...data];
-      updatedData[rowIndex][colIndex] = value;
-      setData(updatedData);
-    },
-    [data]
-  );
 
   const handleColumnCreation = useCallback(() => {
     let updatedData = [...data];
